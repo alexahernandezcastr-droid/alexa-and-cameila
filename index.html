@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Booking | Nails, Brows & Lashes</title>
+    <style>
+        /* Baby Pink Theme Styles */
+        body { 
+            font-family: Georgia, serif; 
+            background-color: #fff0f5; /* Lavender Blush / Baby Pink tint */
+            color: #5d4037; 
+            margin: 0;
+            padding: 20px;
+        }
+
+        .booking-container { 
+            max-width: 450px; 
+            margin: 50px auto; 
+            padding: 30px; 
+            background: #ffffff; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(244, 143, 177, 0.3);
+            border: 1px solid #f8bbd0;
+        }
+
+        h1, h2 { 
+            text-align: center; 
+            font-family: Georgia, serif;
+            color: #f06292; /* Stronger baby pink for headings */
+            margin-bottom: 20px;
+        }
+
+        label { 
+            display: block; 
+            margin-top: 15px; 
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        input, select, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-top: 5px; 
+            border: 2px solid #fce4ec; 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            font-family: Georgia, serif;
+            background-color: #fff9fb;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #f48fb1;
+            background-color: #fff;
+        }
+
+        button { 
+            width: 100%;
+            background-color: #f48fb1; /* Classic Baby Pink */
+            color: white; 
+            padding: 15px;
+            border: none; 
+            border-radius: 30px;
+            cursor: pointer; 
+            margin-top: 25px; 
+            font-family: Georgia, serif;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        button:hover { 
+            background-color: #ec407a; 
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            font-size: 0.8em;
+            color: #f06292;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="booking-container">
+        <h1>Glow & Grace</h1>
+        <div class="services-grid">
+            <span>• Nails</span>
+            <span>• Brows</span>
+            <span>• Lashes</span>
+        </div>
+        
+        <h2>Book Appointment</h2>
+        
+        <form action="#" method="POST">
+            <label for="name">Client Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="service">Select Service</label>
+            <select id="service" name="service">
+                <optgroup label="Nails">
+                    <option value="acrylic">Full Set Acrylics</option>
+                    <option value="gel">Gel Manicure</option>
+                </optgroup>
+                <optgroup label="Eyes">
+                    <option value="brow-tint">Eyebrow Shaping & Tint</option>
+                    <option value="lash-lift">Lash Lift & Tint</option>
+                    <option value="extensions">Classic Lash Extensions</option>
+                </optgroup>
+            </select>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Any allergies or preferences?"></textarea>
+
+            <button type="submit">Secure My Slot</button>
+        </form>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace | Nails, Brows & Lashes</title>
+    <style>
+        /* Global Styles & Georgia Font */
+        body { 
+            font-family: Georgia, serif; 
+            background-color: #fff0f5; /* Baby Pink / Lavender Blush */
+            color: #5d4037; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Container for everything */
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 { 
+            font-size: 3em;
+            color: #f06292; 
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #ec407a;
+            letter-spacing: 2px;
+        }
+
+        /* Main Flex Layout for Form & Gallery */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        /* Booking Form Styles */
+        .booking-card { 
+            flex: 1;
+            min-width: 320px;
+            max-width: 450px;
+            padding: 30px; 
+            background: #ffffff; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(244, 143, 177, 0.2);
+            border: 1px solid #f8bbd0;
+        }
+
+        h2 { 
+            text-align: center; 
+            color: #f06292; 
+            margin-top: 0;
+        }
+
+        label { 
+            display: block; 
+            margin-top: 15px; 
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        input, select, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-top: 5px; 
+            border: 2px solid #fce4ec; 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            font-family: Georgia, serif;
+            background-color: #fff9fb;
+        }
+
+        button { 
+            width: 100%;
+            background-color: #f48fb1; 
+            color: white; 
+            padding: 15px;
+            border: none; 
+            border-radius: 30px;
+            cursor: pointer; 
+            margin-top: 25px; 
+            font-family: Georgia, serif;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover { background-color: #ec407a; }
+
+        /* Photo Gallery Styles */
+        .gallery-card {
+            flex: 1;
+            min-width: 320px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid #f8bbd0;
+            box-shadow: 0 10px 25px rgba(244, 143, 177, 0.2);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            aspect-ratio: 1 / 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-label {
+            position: absolute;
+            bottom: 0;
+            background: rgba(244, 143, 177, 0.8);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .main-content { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1>Glow & Grace</h1>
+            <p class="tagline">Premium Nails • Brows • Lashes</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Gallery Section -->
+            <div class="gallery-card">
+                <h2>Our Lookbook</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Pink Nail Art">
+                        <div class="gallery-label">Gel Nails</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Lash Extensions">
+                        <div class="gallery-label">Volume Lashes</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Brow Lamination">
+                        <div class="gallery-label">HD Brows</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Manicure">
+                        <div class="gallery-label">Classic Mani</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Section -->
+            <div class="booking-card">
+                <h2>Book Now</h2>
+                <form action="#" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="E.g. Jane Doe" required>
+
+                    <label for="service">Service Category</label>
+                    <select id="service" name="service">
+                        <option value="nails">Nails (Gel/Acrylic/Mani)</option>
+                        <option value="brows">Brows (Shaping/Tint/Lamination)</option>
+                        <option value="lashes">Lashes (Classic/Volume/Lift)</option>
+                    </select>
+
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Select Time</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit">Confirm Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxery Salon | Nails, Brows & Lashes</title>
+    <style>
+        /* Global Styles & Georgia Font */
+        body { 
+            font-family: Georgia, serif; 
+            background-color: #fff0f5; /* Baby Pink / Lavender Blush */
+            color: #5d4037; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Container for everything */
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 { 
+            font-size: 3.5em;
+            color: #f06292; 
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #ec407a;
+            letter-spacing: 2px;
+        }
+
+        /* Main Flex Layout for Form & Gallery */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        /* Booking Form Styles */
+        .booking-card { 
+            flex: 1;
+            min-width: 320px;
+            max-width: 450px;
+            padding: 30px; 
+            background: #ffffff; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(244, 143, 177, 0.2);
+            border: 1px solid #f8bbd0;
+        }
+
+        h2 { 
+            text-align: center; 
+            color: #f06292; 
+            margin-top: 0;
+        }
+
+        label { 
+            display: block; 
+            margin-top: 15px; 
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        input, select, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-top: 5px; 
+            border: 2px solid #fce4ec; 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            font-family: Georgia, serif;
+            background-color: #fff9fb;
+        }
+
+        button { 
+            width: 100%;
+            background-color: #f48fb1; 
+            color: white; 
+            padding: 15px;
+            border: none; 
+            border-radius: 30px;
+            cursor: pointer; 
+            margin-top: 25px; 
+            font-family: Georgia, serif;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover { background-color: #ec407a; }
+
+        /* Photo Gallery Styles */
+        .gallery-card {
+            flex: 1;
+            min-width: 320px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid #f8bbd0;
+            box-shadow: 0 10px 25px rgba(244, 143, 177, 0.2);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            aspect-ratio: 1 / 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-label {
+            position: absolute;
+            bottom: 0;
+            background: rgba(244, 143, 177, 0.8);
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+            padding: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .main-content { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1>Luxery Salon</h1>
+            <p class="tagline">Elegant Nails • Precise Brows • Dreamy Lashes</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Gallery Section -->
+            <div class="gallery-card">
+                <h2>Our Portfolio</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Luxery Nails">
+                        <div class="gallery-label">Nail Art</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Luxery Lashes">
+                        <div class="gallery-label">Eyelash Extensions</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Luxery Brows">
+                        <div class="gallery-label">Brow Shaping</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://unsplash.com" alt="Luxery Manicure">
+                        <div class="gallery-label">Premium Manicure</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Section -->
+            <div class="booking-card">
+                <h2>Secure Your Slot</h2>
+                <form action="#" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="E.g. Jane Doe" required>
+
+                    <label for="service">Select Your Service</label>
+                    <select id="service" name="service">
+                        <option value="nails">Luxery Nails</option>
+                        <option value="brows">Luxery Brows</option>
+                        <option value="lashes">Luxery Lashes</option>
+                    </select>
+
+                    <label for="date">Appointment Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
